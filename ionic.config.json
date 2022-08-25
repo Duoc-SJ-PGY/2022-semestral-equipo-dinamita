@@ -1,0 +1,7 @@
+{
+  "name": "ClonRPG",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
