@@ -13,20 +13,20 @@ const routes: Routes = [
         loadChildren:() => import('../inicio/inicio.module').then(m => m.InicioPageModule)
       },
       {
-        path: 'quests',
-        loadChildren:() => import('../quests/quests.module').then(m => m.QuestsPageModule)
+        path: 'explorar',
+        loadChildren: () => import('../explorar/explorar.module').then( m => m.ExplorarPageModule)
       },
       {
-        path: 'play',
-        loadChildren:() => import('../play/play.module').then(m => m.PlayPageModule)
+        path: 'crear',
+        loadChildren: () => import('../crear/crear.module').then( m => m.CrearPageModule)
       },
       {
-        path: 'batalla',
-        loadChildren:() => import('../batalla/batalla.module').then(m => m.BatallaPageModule)
+        path: 'chat',
+        loadChildren: () => import('../chat/chat.module').then( m => m.ChatPageModule)
       },
       {
-        path: 'personaje',
-        loadChildren:() => import('../personaje/personaje.module').then(m => m.PersonajePageModule)
+        path: 'mensajes',
+        loadChildren: () => import('../mensajes/mensajes.module').then( m => m.MensajesPageModule)
       },
       {
         path: '',
