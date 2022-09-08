@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PlayPageRoutingModule } from './play-routing.module';
+import { ExplorarPageRoutingModule } from './explorar-routing.module';
 
-import { PlayPage } from './play.page';
+import { ExplorarPage } from './explorar.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PlayPageRoutingModule
+    ExplorarPageRoutingModule
   ],
-  declarations: [PlayPage]
+  declarations: [ExplorarPage]
 })
-export class PlayPageModule {}
+export class ExplorarPageModule {}

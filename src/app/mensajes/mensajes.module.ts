@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BatallaPageRoutingModule } from './batalla-routing.module';
+import { MensajesPageRoutingModule } from './mensajes-routing.module';
 
-import { BatallaPage } from './batalla.page';
+import { MensajesPage } from './mensajes.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BatallaPageRoutingModule
+    MensajesPageRoutingModule
   ],
-  declarations: [BatallaPage]
+  declarations: [MensajesPage]
 })
-export class BatallaPageModule {}
+export class MensajesPageModule {}

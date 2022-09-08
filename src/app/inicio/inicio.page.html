@@ -1,9 +1,36 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Inicio</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-searchbar></ion-searchbar>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-avatar>
+          <img src="https://ionicframework.com/docs/demos/api/list/avatar-finn.png" />
+        </ion-avatar>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://ionicframework.com/docs/demos/api/list/avatar-finn.png" />
+      </ion-avatar>
+      <ion-label>
+        <h4>r/chile</h4>
+        <h5>u/Finn</h5>
+      </ion-label>
+    </ion-item>
 
+    
+    <ion-card-header>
+      <ion-card-title>Madison, WI</ion-card-title>
+    </ion-card-header>
+    <img src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />
+    
+  </ion-card>
 </ion-content>
