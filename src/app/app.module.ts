@@ -7,10 +7,28 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { IonicStorageModule } from '@ionic/storage';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+/*
+import { Storage } from ‘@ionic/storage';
+
+export class MyApp {
+constructor(private storage: Storage) { }
+
+// set a key/value
+storage.set(‘name’, ‘Max');
+
+// Or to get a key/value pair
+storage.get(‘age').then((val) => {
+console.log( 'Your age is', val);
+});
+}
+*/
