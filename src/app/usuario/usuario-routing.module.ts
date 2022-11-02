@@ -7,7 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: UsuarioPage
-  }
+  },
+  {
+    path: 'Inicio', redirectTo: 'InicioPage', pathMatch: 'full'
+ }
 ];
 
 @NgModule({
