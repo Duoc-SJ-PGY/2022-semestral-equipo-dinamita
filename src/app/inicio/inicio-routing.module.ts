@@ -7,12 +7,26 @@ import { InicioPage } from './inicio.page';
 const routes: Routes = [
   {
     path: '',
-    component: InicioPage
+    component: InicioPage,
+    children:[
+      {
+        path: 'usuario',
+        loadChildren: () => import('../usuario/usuario.module').then( m => m.UsuarioPageModule)
+      },
+      {
+        path: '',
+        redirectTo:'/inicio/inicio',
+        pathMatch: 'full'
+      }
+
+    ]
   },
   {
-    path: 'usuario',
-    loadChildren: () => import('../usuario/usuario.module').then( m => m.UsuarioPageModule)
+    path: '',
+    redirectTo:'/inicio/inicio',
+    pathMatch: 'full'
   }
+
 ];
 
 @NgModule({
