@@ -1,3 +1,4 @@
+
 import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -27,6 +28,10 @@ const routes: Routes = [
       {
         path: 'mensajes',
         loadChildren: () => import('../mensajes/mensajes.module').then( m => m.MensajesPageModule)
+      },
+      {
+        path: 'opciones',
+        loadChildren: () => import('../opciones/opciones.module').then(m => m.OpcionesPageModule)
       },
       {
         path: '',

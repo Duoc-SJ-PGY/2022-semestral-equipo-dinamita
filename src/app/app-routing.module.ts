@@ -5,10 +5,8 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tablinks/tablinks.module').then( m => m.TablinksPageModule)
-  },  {
-    path: 'opciones',
-    loadChildren: () => import('./opciones/opciones.module').then( m => m.OpcionesPageModule)
   },
+  ,
 
 
 
