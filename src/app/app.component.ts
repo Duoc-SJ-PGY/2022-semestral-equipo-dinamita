@@ -7,12 +7,13 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  constructor(/*private storage: Storage*/) {
+  constructor(private storage: Storage) {
   }
 
-  /*async ngOnInit() {
+  // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
+  async ngOnInit() {
     // If using a custom driver:
     // await this.storage.defineDriver(MyCustomDriver)
     await this.storage.create();
-  }*/
+  }
 }

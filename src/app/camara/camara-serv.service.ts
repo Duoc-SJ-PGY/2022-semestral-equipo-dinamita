@@ -6,8 +6,9 @@ import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 @Injectable({
   providedIn: 'root',
 })
+
 export class CamaraServService {
-  constructor(private camera: Camera) {}
+  constructor(private camera: Camera ) {}
 
   takePicture() {
     const options: CameraOptions = {
