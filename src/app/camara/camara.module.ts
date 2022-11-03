@@ -1,3 +1,4 @@
+import { Camera } from '@awesome-cordova-plugins/camera/ngx';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +16,9 @@ import { CamaraPage } from './camara.page';
     IonicModule,
     CamaraPageRoutingModule
   ],
+  providers: [
+    Camera
+    ],
   declarations: [CamaraPage]
 })
 export class CamaraPageModule {}
