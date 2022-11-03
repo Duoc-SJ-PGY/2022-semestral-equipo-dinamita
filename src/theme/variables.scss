@@ -52,7 +52,7 @@
     --ion-color-danger-shade: #cf3c4f;
     --ion-color-danger-tint: #ed576b;
     /** dark **/
-    --ion-color-dark: #222428;
+    --ion-color-dark: #000000;
     --ion-color-dark-rgb: 34, 36, 40;
     --ion-color-dark-contrast: #ffffff;
     --ion-color-dark-contrast-rgb: 255, 255, 255;
@@ -176,7 +176,7 @@
    * -------------------------------------------
    */
     .md body {
-        --ion-background-color: #00eeff;
+        --ion-background-color: #005f72;
         --ion-background-color-rgb: 0, 238, 255;
         --ion-text-color: #000000;
         --ion-text-color-rgb: 0, 0, 0;
@@ -199,5 +199,9 @@
         --ion-color-step-850: #002426;
         --ion-color-step-900: #001819;
         --ion-color-step-950: #000c0d;
+        --ion-item-background: #020d35;
+        --ion-toolbar-background: #0b0a31;
+        --ion-tab-bar-background: #020f29;
+        --ion-card-background: #003d42;
     }
 }
