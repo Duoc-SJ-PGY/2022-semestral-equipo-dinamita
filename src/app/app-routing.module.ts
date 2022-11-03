@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'camara',
     loadChildren: () => import('./camara/camara.module').then( m => m.CamaraPageModule)
+  },
+  {
+    path: 'maps-google',
+    loadChildren: () => import('./maps-google/maps-google.module').then( m => m.MapsGooglePageModule)
   }
 
 
