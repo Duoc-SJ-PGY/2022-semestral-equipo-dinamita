@@ -9,7 +9,7 @@ import { NavController } from '@ionic/angular';
 })
 export class GeolocalizacionPage implements OnInit{
 
-  //constructor(private geolocation: Geolocation) {};
+  //constructor(private geolocation: Geolocation) {}
 
 
 /*
@@ -29,12 +29,12 @@ watch.subscribe((data) => {
 */
   constructor(public navCtrl: NavController, public geolocation: Geolocation){ }
 
-ngOnInit() {
+ngOnInit(){
   this.geolocationNative();
 }
 
-geolocationNative(){
-  this.geolocation.getCurrentPosition().then((geoposition: Geoposition) =>{console.log(geoposition); })
+geolocationNative(): void{
+  this.geolocation.getCurrentPosition().then((geoposition: Geoposition) =>{console.log(geoposition); });
 }
 /*
   ngOnInit() {
