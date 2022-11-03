@@ -12,6 +12,10 @@ const routes: Routes = [
   {
      path: 'usuario', redirectTo: 'UsuarioPage', pathMatch: 'full'
     //loadChildren: () => import('../usuario/usuario.module').then( m => m.UsuarioPageModule)
+  },
+  {
+    path: 'mensajes', redirectTo: 'mensajesPage', pathMatch: 'full'
+
   }
 ];
 

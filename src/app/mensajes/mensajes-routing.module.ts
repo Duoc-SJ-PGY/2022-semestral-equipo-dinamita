@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: MensajesPage
+  },
+  {
+    path: 'inicio',
+    redirectTo: '/tablinks/inicio', pathMatch: 'full'
   }
 ];
 
